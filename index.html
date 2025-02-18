@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Profile</title>
+    <title>Laurel Schwulst, Spring 2025 at Princeton</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <style>
@@ -25,6 +25,14 @@
       figure.profile {
         max-width: 300px;
         margin: 0 auto;
+        position: relative;
+      }
+      img.sphere {
+        position: absolute;
+        top: 0.6em;
+        right: 0.5em;
+        width: 50px;
+        height: 50px;
       }
       @media screen and (max-width: 500px) {
         main {
@@ -37,9 +45,15 @@
     <!-- This page has been inspired by https://tosic.com -->
     <main>
       <figure class="profile">
+        <!-- note: make sure the below is a square dimension photo of you -->
         <img
-          src="laurel-sphere.png"
-          class="profile"
+          src="laurel-plum-beach.jpg"
+          alt="profile photo of laurel with water glimmering behind her, looking off into the distance"
+        />
+        <!-- note: put your sphere here -->
+        <img
+          src="laurel-sphere-new.png"
+          class="sphere"
           alt="a green halo sphere"
         />
       </figure>
@@ -47,14 +61,17 @@
       <br /><br /><br />
 
       <b>Prof. Laurel Schwulst</b><br />
-      <a href="mailto: schwulst@princeton.edu">schwulst@princeton.edu</a>
+      <a href="mailto: schwulst@princeton.edu">schwulst@princeton.edu</a><br />
+      <a href="http://veryinteractive.net/gifting"
+        >VIS 208. Graphic Design: Link ("Gifting")</a
+      ><br />
+      <a href="http://laurel.world">laurel.world</a><br />
 
       <br /><br />
 
-      <a href="valentines-day-2025/">Valentine's Day 2025</a><br />
-      <a href="html-idea-seed/">HTML Idea Seed</a><br />
-      CSS Poems<br />
-      CSS Idea Seed<br />
+      <b>Gifting Experiments</b><br />
+      <a href="valentines-day-2025/index.html">Valentines Day HTML</a><br />
+      <a href="idea-seed-html/index.html">Idea Seed HTML</a>
     </main>
   </body>
 </html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coding from Life</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="base.css" type="text/css" />
+    <style>
+      .canvas {
+        background: #e8561d;
+      }
+      .apple {
+        height: 100px;
+        width: 100px;
+        background: #880b0b;
+        border-radius: 45%;
+        position: absolute;
+        bottom: 95px;
+        left: 225px;
+        z-index: 1;
+      }
+      .vase {
+        height: 300px;
+        width: 200px;
+        /* background: rgba(255, 255, 255, 0.25); */
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        position: absolute;
+        bottom: 123px;
+        left: 378px;
+        z-index: 1;
+      }
+
+      .vase-bottom {
+        height: 85px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        border-radius: 50%;
+        bottom: -42px;
+        border-bottom: 2px solid white;
+      }
+
+      .vase-top {
+        height: 85px;
+        width: 100%;
+        position: absolute;
+        top: -44px;
+        border-radius: 50%;
+        border: 2px solid white;
+      }
+
+      .flower {
+        height: 415px;
+        width: 50px;
+        /* border: 1px solid lime; */
+        transform: rotate(-15deg);
+        position: absolute;
+        bottom: 0;
+        right: 76px;
+      }
+      .flower.two {
+        transform: rotate(25deg);
+        right: 44px;
+      }
+      .stem {
+        height: 100%;
+        width: 10px;
+        background: forestgreen;
+      }
+      .petals {
+        height: 50px;
+        width: 125px;
+        /* background: yellow; */
+        /* border: 1px solid yellow; */
+        border-radius: 50%;
+        position: absolute;
+        top: -34px;
+        left: -56px;
+      }
+      .petal {
+        background: yellow;
+        height: 90px;
+        width: 10px;
+        border-radius: 50%;
+        position: absolute;
+        transform: rotate(-66deg);
+        left: 18px;
+        bottom: -12px;
+      }
+      .petal.two {
+        transform: rotate(-88deg);
+        bottom: -28px;
+      }
+      .petal.three {
+        transform: rotate(-100deg);
+        bottom: -40px;
+      }
+      .petal.four {
+        transform: rotate(-180deg);
+        bottom: 9px;
+        left: 59px;
+      }
+      .petal.five {
+        transform: rotate(-220deg);
+        bottom: 6px;
+        left: 33px;
+      }
+      .ruler {
+        /* background: silver; */
+        background: linear-gradient(
+          90deg,
+          rgba(184, 184, 184, 1) 0%,
+          rgba(77, 77, 77, 1) 100%
+        );
+        width: 601px;
+        height: 20px;
+        position: absolute;
+        bottom: 193px;
+        left: 50px;
+        transform: rotate(-20deg) skew(40deg);
+      }
+      .plate {
+        height: 68px;
+        width: 183px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        position: absolute;
+        top: 200px;
+        right: 57px;
+        z-index: 1;
+        border: 2px solid white;
+      }
+      .cake {
+        width: 0;
+        height: 0;
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-left: 128px solid #954d11;
+        transform: rotate(160deg);
+        position: absolute;
+        bottom: 0;
+        left: 18px;
+      }
+      .candle {
+        background: white;
+        height: 50px;
+        width: 5px;
+        position: absolute;
+        bottom: 61px;
+        right: 60px;
+      }
+      .flame {
+        background: yellow;
+        opacity: 0.5;
+        height: 30px;
+        width: 16px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 117px;
+        right: 54px;
+        animation: 0.75s linear 1s infinite alternate-reverse flicker;
+      }
+      @keyframes flicker {
+        from {
+          transform: rotate(0deg);
+          opacity: 0.5;
+        }
+        to {
+          transform: rotate(-25deg);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="canvas">
+      <div class="apple"></div>
+      <div class="vase">
+        <div class="vase-bottom"></div>
+        <div class="vase-top"></div>
+        <div class="flower">
+          <div class="stem"></div>
+          <div class="petals">
+            <div class="petal one"></div>
+            <div class="petal two"></div>
+            <div class="petal three"></div>
+            <div class="petal four"></div>
+            <div class="petal five"></div>
+          </div>
+        </div>
+        <div class="flower two">
+          <div class="stem"></div>
+          <div class="petals">
+            <div class="petal one"></div>
+            <div class="petal two"></div>
+            <div class="petal three"></div>
+            <div class="petal four"></div>
+            <div class="petal five"></div>
+          </div>
+        </div>
+      </div>
+      <div class="ruler"></div>
+      <div class="plate">
+        <div class="cake"></div>
+        <div class="candle"></div>
+        <div class="flame"></div>
+      </div>
+    </div>
+  </body>
+</html>
